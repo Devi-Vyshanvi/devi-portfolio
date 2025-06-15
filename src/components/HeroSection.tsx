@@ -17,7 +17,7 @@ const HeroSection = () => (
       </Button>
     </div>
     <div className="md:w-1/2 w-full mt-8 md:mt-0 relative">
-      <div className="absolute inset-0 bg-pink-200 rounded-full transform -rotate-12 blur-3xl opacity-50 z-0"></div>
+      <div className="absolute inset-0 bg-purple-200 rounded-full transform -rotate-12 blur-3xl opacity-50 z-0"></div>
       <img 
         src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1170&auto=format&fit=crop" 
         alt="Person working on a laptop" 
