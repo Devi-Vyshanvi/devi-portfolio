@@ -3,14 +3,14 @@ import React from "react";
 import SkillBadge from "./SkillBadge";
 
 const SKILLS = [
+  "Figma (UI/UX)",
   "DSA (Basics)",
   "Python",
   "HTML",
   "CSS",
   "Tailwind CSS",
   "JavaScript",
-  "SQL / SQLite",
-  "Figma (UI/UX)"
+  "SQL / SQLite"
 ] as const;
 
 const SkillsSection = () => (
