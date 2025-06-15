@@ -1,13 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+// Main portfolio page
+
+import React from "react";
+import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
+import SkillsSection from "@/components/SkillsSection";
+import ProjectsSection from "@/components/ProjectsSection";
+import ContactSection from "@/components/ContactSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="w-full min-h-screen flex flex-col items-center bg-gradient-to-tr from-blush via-sky to-mint font-sans">
+      <HeroSection />
+      <AboutSection />
+      <SkillsSection />
+      <ProjectsSection />
+      <ContactSection />
+      <footer className="py-6 text-center w-full text-muted-foreground text-sm">
+        © {new Date().getFullYear()} Your Name. Proudly built with <span className="font-bold text-primary">React & Tailwind CSS</span>.
+      </footer>
+    </main>
   );
 };
 
