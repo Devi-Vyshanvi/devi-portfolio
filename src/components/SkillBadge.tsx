@@ -17,7 +17,7 @@ type SkillBadgeProps = {
 
 const SkillBadge = ({ skill }: SkillBadgeProps) => (
   <span
-    className="px-3 py-1 rounded bg-gray-100 text-gray-700 text-sm transition-colors duration-150 hover:bg-gray-200 cursor-pointer"
+    className="px-3 py-1 rounded bg-gray-800 text-gray-200 text-sm transition-colors duration-150 hover:bg-gray-700 cursor-pointer"
   >
     {skill}
   </span>
