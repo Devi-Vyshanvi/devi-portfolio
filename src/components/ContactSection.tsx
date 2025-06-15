@@ -1,6 +1,6 @@
 
 import React from "react";
-import { ArrowRight } from "lucide-react";
+import { Linkedin, Github } from "lucide-react";
 import { Button } from "./ui/button";
 
 const ContactSection = () => (
@@ -9,14 +9,28 @@ const ContactSection = () => (
     <p className="text-lg text-muted-foreground mt-4 mb-6 max-w-xl mx-auto">
       I’m currently looking for new opportunities. My inbox is always open, whether you have a question or just want to say hi!
     </p>
-    <Button asChild size="lg" className="bg-primary text-primary-foreground font-bold rounded-lg shadow-lg hover:bg-primary/90 transition-all transform hover:scale-105">
-      <a
-        href="mailto:your.email@example.com"
-        className="inline-flex items-center gap-2"
-      >
-        Say Hello <ArrowRight size={22} />
-      </a>
-    </Button>
+    <div className="flex justify-center items-center gap-4">
+      <Button asChild size="lg" variant="outline" className="font-bold hover:scale-105 transition-transform border-2">
+        <a
+          href="https://www.linkedin.com/in/devi-vyshnavy-ankana"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center"
+        >
+          <Linkedin className="mr-2 h-5 w-5" /> LinkedIn
+        </a>
+      </Button>
+      <Button asChild size="lg" variant="outline" className="font-bold hover:scale-105 transition-transform border-2">
+        <a
+          href="https://github.com/Devi-Vyshanvi"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center"
+        >
+          <Github className="mr-2 h-5 w-5" /> GitHub
+        </a>
+      </Button>
+    </div>
   </section>
 );
 
