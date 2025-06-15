@@ -1,13 +1,11 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => (
   <section id="about" className="flex flex-col md:flex-row items-center gap-12 py-12 md:py-20">
     <div className="md:w-1/2 text-center md:text-left">
-      <p className="font-medium text-primary mb-2">Hi, my name is Your Name.</p>
       <h1 className="text-4xl lg:text-6xl font-extrabold tracking-tighter mb-4 leading-tight">
-        I design & build for the web.
+        Hola my self Ankana Devi Vyshnavy
       </h1>
       <p className="text-lg text-muted-foreground mb-8 max-w-lg mx-auto md:mx-0">
         I'm a designer and developer specializing in UI/UX and creating high-quality websites and applications.
