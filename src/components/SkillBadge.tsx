@@ -24,11 +24,11 @@ const icons: Record<Skill, React.ReactNode> = {
 };
 
 const colorClass: Record<Skill, string> = {
-  HTML: "bg-[#ffe5ec]/80 text-[#c6693b]",
-  CSS: "bg-[#e9ecef]/80 text-[#3b82f6]",
-  Python: "bg-[#e0f7fa]/80 text-[#3872a9]",
-  "Tailwind CSS": "bg-[#d0f1ff]/80 text-[#38bdf8]",
-  JavaScript: "bg-[#fff4b8]/80 text-[#eab308]",
+  HTML: "text-[#e44d26]",
+  CSS: "text-[#264de4]",
+  Python: "text-[#3872a9]",
+  "Tailwind CSS": "text-[#38bdf8]",
+  JavaScript: "text-[#facc15]",
 };
 
 type SkillBadgeProps = {
@@ -37,13 +37,12 @@ type SkillBadgeProps = {
 
 const SkillBadge = ({ skill }: SkillBadgeProps) => (
   <span
-    className={`youth-badge gap-2 text-base shadow ${colorClass[skill]} transition-colors`}
+    className={`youth-badge gap-2 text-base shadow transition-colors ${colorClass[skill]}`}
     tabIndex={0}
   >
     {icons[skill]}
-    <span className="font-semibold">{skill}</span>
+    <span className="font-semibold text-powder-blue">{skill}</span>
   </span>
 );
 
 export default SkillBadge;
-

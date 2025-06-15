@@ -1,33 +1,34 @@
 
 import React from "react";
-import { FileCode2 } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
   description: string;
   url?: string;
-  iconColor?: string;
+  imageUrl?: string;
 }
 
 const ProjectCard = ({
   title,
   description,
   url,
-  iconColor = "#4981e3",
+  imageUrl,
 }: ProjectCardProps) => (
-  <div className="rounded-xl bg-white/95 shadow-youth p-5 flex flex-col justify-between h-full transition-all duration-200 hover:scale-105 hover:shadow-lg animate-fade-in">
-    <div className="flex items-center gap-3 mb-2">
-      <FileCode2 size={28} className="text-primary" style={{ color: iconColor }} />
-      <h3 className="text-xl font-bold text-primary">{title}</h3>
+  <div className="rounded-xl bg-gunmetal/40 shadow-youth p-0 flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg animate-fade-in group">
+    <div className="overflow-hidden rounded-t-xl">
+      <img src={imageUrl} alt={title} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
     </div>
-    <p className="text-foreground/80 mb-3 flex-1">{description}</p>
-    {url ? (
-      <a href={url} className="mt-2 youth-badge w-fit hover:bg-sky" target="_blank" rel="noopener noreferrer">
-        View Project
-      </a>
-    ) : (
-      <span className="mt-2 text-sm text-muted-foreground">Coming soon</span>
-    )}
+    <div className="p-5 flex flex-col flex-1">
+      <h3 className="text-xl font-bold text-light-gray mb-2">{title}</h3>
+      <p className="text-powder-blue/80 mb-4 flex-1">{description}</p>
+      {url ? (
+        <a href={url} className="mt-auto youth-badge w-fit hover:bg-celestial-blue/80" target="_blank" rel="noopener noreferrer">
+          View Project
+        </a>
+      ) : (
+        <span className="mt-auto text-sm text-muted-foreground">Coming soon</span>
+      )}
+    </div>
   </div>
 );
 

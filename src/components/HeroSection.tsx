@@ -1,28 +1,48 @@
 
 import React from "react";
+import { Github, Linkedin, Mail } from "lucide-react";
+
+const socialLinks = [
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/yourusername/",
+    Icon: Linkedin,
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/yourusername",
+    Icon: Github,
+  },
+  {
+    name: "Email",
+    href: "mailto:your.email@example.com",
+    Icon: Mail,
+  },
+];
 
 const HeroSection = () => (
-  <header className="youth-section flex flex-col items-center justify-center gap-6 mt-4 bg-gradient-to-br from-sky via-mint to-blush">
-    <img
-      src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=facearea&w=256&q=80"
-      alt="Student"
-      className="w-28 h-28 rounded-full border-4 border-white/80 shadow-lg -mt-12 object-cover"
-      draggable="false"
-    />
-    <h1 className="youth-section-header text-4xl md:text-5xl text-center">
-      Hi, I’m a <span className="text-[#4981e3]">BTech CSE</span> student at <span className="text-[#fd8247]">NIAT</span>
+  <section id="home" className="flex flex-col items-center justify-center text-center min-h-screen py-20 bg-transparent">
+    <h1 className="text-5xl md:text-7xl font-bold text-light-gray tracking-tighter mb-4 animate-fade-in">
+      Hi, I’m <span className="text-celestial-blue">Your Name</span>
     </h1>
-    <p className="text-xl text-foreground/80 max-w-2xl text-center">
-      Passionate about tech, code, and all things creative.<br />
-      Actively learning — looking for my first internship!
+    <p className="text-xl md:text-2xl text-powder-blue max-w-2xl mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+      A BTech CSE student passionate about tech, code, and building cool things for the web.
     </p>
-    <a
-      href="#contact"
-      className="px-6 py-2 rounded-full font-semibold text-white bg-primary hover:bg-blue-700 shadow youth-badge transition-all text-lg"
-    >
-      Let’s Connect
-    </a>
-  </header>
+    <div className="flex gap-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+      {socialLinks.map((link) => (
+        <a
+          key={link.name}
+          href={link.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-powder-blue hover:text-light-gray transition-colors"
+          aria-label={link.name}
+        >
+          <link.Icon size={28} />
+        </a>
+      ))}
+    </div>
+  </section>
 );
 
 export default HeroSection;

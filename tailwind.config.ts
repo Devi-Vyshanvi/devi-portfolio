@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -66,12 +65,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Youthful pastel palette
-				blush: "#ffe5ec",
-				lavender: "#e9ecef",
-				mint: "#e0f7fa",
-				sky: "#d0f1ff",
-				yellow: "#fff4b8",
+				// Dark theme palette
+				"raisin-black": "#1D1D20",
+				"space-cadet": "#1E293B",
+				"gunmetal": "#334155",
+				"light-gray": "#F1F5F9",
+				"powder-blue": "#A3B3C1",
+				"celestial-blue": "#4981e3",
 			},
 			borderRadius: {
 				lg: '1rem',
@@ -79,7 +79,7 @@ export default {
 				sm: '0.5rem'
 			},
 			boxShadow: {
-				youth: '0 6px 32px 0 rgba(64, 117, 191, 0.07), 0 1.5px 6px 0 rgba(79, 209, 197, 0.05)',
+				youth: '0 6px 32px 0 rgba(0, 0, 0, 0.15), 0 1.5px 6px 0 rgba(0, 0, 0, 0.1)',
 			},
 			keyframes: {
 				'fade-in': {
