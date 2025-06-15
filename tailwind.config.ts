@@ -70,7 +70,7 @@ export default {
 				// Dark theme palette
 				"raisin-black": "#1D1D20",
 				"space-cadet": "#1E293B",
-				"gunmetal": "#334155",
+				"gunmetal": "#262626",
 				"light-gray": "#F1F5F9",
 				"powder-blue": "#A3B3C1",
 				"celestial-blue": "#4981e3",
