@@ -1,6 +1,12 @@
 
 import React from "react";
-import { Html5, Css3, Python, FileCode2, Javascript } from "lucide-react";
+import {
+  Code,
+  Palette,
+  Terminal,
+  Feather,
+  MonitorSmartphone
+} from "lucide-react";
 
 type Skill =
   | "HTML"
@@ -10,11 +16,11 @@ type Skill =
   | "JavaScript";
 
 const icons: Record<Skill, React.ReactNode> = {
-  HTML: <Html5 size={22} className="text-[#e44d26]" />,
-  CSS: <Css3 size={22} className="text-[#264de4]" />,
-  Python: <Python size={22} className="text-[#3872a9]" />,
-  "Tailwind CSS": <FileCode2 size={22} className="text-[#38bdf8]" />,
-  JavaScript: <Javascript size={22} className="text-[#facc15]" />,
+  HTML: <Code size={22} className="text-[#e44d26]" />,
+  CSS: <Palette size={22} className="text-[#264de4]" />,
+  Python: <Terminal size={22} className="text-[#3872a9]" />,
+  "Tailwind CSS": <Feather size={22} className="text-[#38bdf8]" />,
+  JavaScript: <MonitorSmartphone size={22} className="text-[#facc15]" />,
 };
 
 const colorClass: Record<Skill, string> = {
@@ -40,3 +46,4 @@ const SkillBadge = ({ skill }: SkillBadgeProps) => (
 );
 
 export default SkillBadge;
+
