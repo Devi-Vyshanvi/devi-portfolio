@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -56,7 +55,12 @@
 }
 
 .youth-section-header {
-  @apply text-3xl md:text-4xl font-bold text-light-gray mb-4;
+  @apply text-4xl md:text-6xl font-extrabold !font-display text-black mb-4 tracking-tight;
+}
+
+// Add skill badge highlight for Figma
+.skill-badge-figma {
+  @apply border-4 border-yellow-400 bg-yellow-100 text-black shadow-lg font-extrabold;
 }
 
 .youth-badge {
