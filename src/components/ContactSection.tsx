@@ -1,21 +1,23 @@
 
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import Section from "./Section";
+import { Button } from "./ui/button";
 
 const ContactSection = () => (
-  <Section id="contact" className="mb-4 text-center">
-    <h2 className="youth-section-header">Get In Touch</h2>
-    <p className="text-lg text-powder-blue mt-4 mb-6 max-w-xl mx-auto">
-      I’m currently looking for new opportunities. Whether you have a question or just want to say hi, my inbox is always open!
+  <section id="contact" className="py-12 md:py-20 my-12 md:my-20 text-center bg-gray-100 rounded-2xl border-2 border-gray-900">
+    <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Get In Touch</h2>
+    <p className="text-lg text-gray-600 mt-4 mb-6 max-w-xl mx-auto">
+      I’m currently looking for new opportunities. My inbox is always open, whether you have a question or just want to say hi!
     </p>
-    <a
-      href="mailto:your.email@example.com"
-      className="inline-flex items-center gap-2 text-xl font-semibold text-light-gray bg-celestial-blue px-8 py-3 rounded-lg transition-transform hover:scale-105"
-    >
-      Say Hello <ArrowRight size={22} />
-    </a>
-  </Section>
+    <Button asChild size="lg" className="bg-primary text-primary-foreground font-bold rounded-lg shadow-lg hover:bg-primary/90 transition-all transform hover:scale-105">
+      <a
+        href="mailto:your.email@example.com"
+        className="inline-flex items-center gap-2"
+      >
+        Say Hello <ArrowRight size={22} />
+      </a>
+    </Button>
+  </section>
 );
 
 export default ContactSection;

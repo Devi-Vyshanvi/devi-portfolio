@@ -1,5 +1,6 @@
 
 import React from "react";
+import { Button } from "./ui/button";
 
 interface ProjectCardProps {
   title: string;
@@ -14,17 +15,19 @@ const ProjectCard = ({
   url,
   imageUrl,
 }: ProjectCardProps) => (
-  <div className="rounded-xl bg-gunmetal/40 shadow-youth p-0 flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg animate-fade-in group">
-    <div className="overflow-hidden rounded-t-xl">
+  <div className="bg-card rounded-2xl border-2 border-gray-900 shadow-[8px_8px_0px_#111827] flex flex-col h-full transition-all duration-300 hover:shadow-[4px_4px_0px_#111827] hover:translate-x-1 hover:translate-y-1 group overflow-hidden">
+    <div className="overflow-hidden">
       <img src={imageUrl} alt={title} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
     </div>
-    <div className="p-5 flex flex-col flex-1">
-      <h3 className="text-xl font-bold text-light-gray mb-2">{title}</h3>
-      <p className="text-powder-blue/80 mb-4 flex-1">{description}</p>
+    <div className="p-6 flex flex-col flex-1">
+      <h3 className="text-xl font-bold mb-2">{title}</h3>
+      <p className="text-gray-600 mb-4 flex-1">{description}</p>
       {url ? (
-        <a href={url} className="mt-auto youth-badge w-fit hover:bg-celestial-blue/80" target="_blank" rel="noopener noreferrer">
-          View Project
-        </a>
+        <Button asChild variant="outline" className="mt-auto w-fit border-gray-900 border-2 font-semibold hover:bg-gray-100">
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            View Project
+          </a>
+        </Button>
       ) : (
         <span className="mt-auto text-sm text-muted-foreground">Coming soon</span>
       )}

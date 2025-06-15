@@ -6,35 +6,36 @@
 @layer base {
   :root {
     font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
-    --background: 222 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Light Theme variables inspired by the reference image */
+    --background: 30 100% 97%; /* Peachy White */
+    --foreground: 222 84% 4.9%; /* Dark Gray / Black */
 
-    --card: 224 71.4% 4.1%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 222 84% 4.9%;
 
-    --popover: 224 71.4% 4.1%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 4.9%;
 
-    --primary: 211 74% 55%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 45 98% 60%; /* Bright Yellow */
+    --primary-foreground: 222 84% 4.9%;
 
-    --secondary: 222.2 47.4% 11.2%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 13% 91%;
+    --secondary-foreground: 222 84% 4.9%;
 
-    --muted: 222.2 47.4% 11.2%;
+    --muted: 220 13% 91%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 222.2 47.4% 11.2%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 220 13% 91%;
+    --accent-foreground: 222 84% 4.9%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 222.2 47.4% 11.2%;
-    --input: 222.2 47.4% 11.2%;
-    --ring: 211 74% 55%;
+    --border: 220 13% 85%;
+    --input: 220 13% 85%;
+    --ring: 45 98% 60%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
   }
 
   html {
@@ -46,25 +47,19 @@
   }
 
   h1, h2, h3, h4 {
-    @apply font-bold;
+    @apply font-bold font-display;
   }
 }
 
-/* Utility classes */
+/* Removing old utility classes */
 .youth-section {
-  @apply rounded-lg bg-card/50 backdrop-blur-sm border border-border/20 shadow-youth p-8 mb-10 animate-fade-in;
+  @apply p-0 m-0;
 }
 
 .youth-section-header {
-  @apply text-4xl md:text-6xl font-extrabold !font-display text-black mb-4 tracking-tight;
-}
-
-/* Add skill badge highlight for Figma */
-.skill-badge-figma {
-  @apply border-4 border-yellow-400 bg-yellow-100 text-black shadow-lg font-extrabold;
+  @apply text-4xl md:text-5xl font-extrabold !font-display tracking-tight;
 }
 
 .youth-badge {
-  @apply inline-flex items-center px-4 py-1.5 rounded-full bg-gunmetal/80 text-powder-blue font-semibold shadow hover:scale-105 transition-transform duration-200;
+  @apply inline-flex items-center px-4 py-1.5 rounded-full bg-gray-900 text-white font-semibold shadow hover:scale-105 transition-transform duration-200;
 }
-

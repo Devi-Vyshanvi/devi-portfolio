@@ -1,21 +1,28 @@
 
 import React from "react";
+import { Button } from "@/components/ui/button";
 
 const HeroSection = () => (
-  <section className="text-center mt-8 mb-8">
-    <h1 className="text-3xl font-bold mb-2">
-      Hello, I'm <span className="text-yellow-400">Your Name</span>
-    </h1>
-    <p className="text-gray-300 mb-4">
-      BTech CSE student | Web, Code &amp; Design
-    </p>
-    <div className="flex justify-center gap-2 mb-4">
-      <a
-        href="#skills"
-        className="bg-yellow-500 text-gray-900 rounded px-4 py-2 text-sm font-medium"
-      >
-        My Skills
-      </a>
+  <section id="about" className="flex flex-col md:flex-row items-center gap-12 py-12 md:py-20">
+    <div className="md:w-1/2 text-center md:text-left">
+      <p className="font-medium text-primary mb-2">Hi, my name is Your Name.</p>
+      <h1 className="text-4xl lg:text-6xl font-extrabold tracking-tighter mb-4 leading-tight">
+        I design & build for the web.
+      </h1>
+      <p className="text-lg text-gray-600 mb-8 max-w-lg mx-auto md:mx-0">
+        I'm a designer and developer specializing in UI/UX and creating high-quality websites and applications.
+      </p>
+      <Button asChild size="lg" className="bg-primary text-primary-foreground font-bold rounded-lg shadow-lg hover:bg-primary/90 transition-all transform hover:scale-105">
+        <a href="#projects">Learn From Me</a>
+      </Button>
+    </div>
+    <div className="md:w-1/2 w-full mt-8 md:mt-0 relative">
+      <div className="absolute inset-0 bg-pink-200 rounded-full transform -rotate-12 blur-3xl opacity-50 z-0"></div>
+      <img 
+        src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1170&auto=format&fit=crop" 
+        alt="Person working on a laptop" 
+        className="relative rounded-2xl shadow-2xl w-full h-auto z-10"
+      />
     </div>
   </section>
 );
