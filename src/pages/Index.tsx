@@ -19,7 +19,7 @@ const Index = () => (
         </main>
       </div>
       <footer className="py-6 text-center w-full text-muted-foreground text-xs">
-        © {new Date().getFullYear()} Your Name. All Rights Reserved.
+        © {new Date().getFullYear()} Ankana Devi Vyshnavy. All Rights Reserved.
       </footer>
     </div>
   </div>
