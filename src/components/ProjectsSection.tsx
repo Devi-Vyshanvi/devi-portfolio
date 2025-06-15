@@ -19,7 +19,7 @@ const PROJECTS = [
     title: "Mobile App Concept",
     description: "A design concept for a new mobile application, detailing the user interface and experience in Figma.",
     url: "https://www.figma.com/design/ieZALzKNZR7fgVAjN51Ecs/Untitled?node-id=0-1&p=f",
-    imageUrl: "https://images.unsplash.com/photo-1581287053822-fd7bf4f4bf3f?q=80&w=1332&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1374&auto=format&fit=crop",
   },
 ];
 
