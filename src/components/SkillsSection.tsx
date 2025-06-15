@@ -1,7 +1,6 @@
 
 import React from "react";
 import SkillBadge from "./SkillBadge";
-import Section from "./Section";
 
 const SKILLS = [
   "DSA (Basics)",
@@ -15,14 +14,12 @@ const SKILLS = [
 ] as const;
 
 const SkillsSection = () => (
-  <Section id="skills">
-    <h2 className="youth-section-header font-display mb-8">My Skillset</h2>
-    <div className="flex flex-wrap gap-5 justify-center mt-3">
-      {SKILLS.map((skill) => (
-        <SkillBadge key={skill} skill={skill} />
-      ))}
+  <section id="skills" className="mb-8">
+    <h2 className="text-xl font-semibold mb-2">Skills</h2>
+    <div className="flex flex-wrap gap-2">
+      {SKILLS.map(skill => <SkillBadge key={skill} skill={skill} />)}
     </div>
-  </Section>
+  </section>
 );
 
 export default SkillsSection;
