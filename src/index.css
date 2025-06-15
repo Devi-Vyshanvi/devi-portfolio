@@ -63,3 +63,15 @@
 .youth-badge {
   @apply inline-flex items-center px-4 py-1.5 rounded-full bg-gray-900 text-white font-semibold shadow hover:scale-105 transition-transform duration-200;
 }
+
+@layer components {
+  .story-link {
+    @apply relative pb-1;
+  }
+  .story-link::after {
+    @apply content-[''] absolute w-full scale-x-0 h-[1.5px] bottom-0 left-0 bg-primary origin-bottom-right transition-transform duration-300;
+  }
+  .story-link:hover::after {
+    @apply scale-x-100 origin-bottom-left;
+  }
+}
