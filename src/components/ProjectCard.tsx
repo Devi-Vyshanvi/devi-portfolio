@@ -15,7 +15,7 @@ const ProjectCard = ({
   url,
   imageUrl,
 }: ProjectCardProps) => (
-  <div className="bg-card rounded-2xl border-2 border-border shadow-[8px_8px_0px_#334155] flex flex-col h-full transition-all duration-300 hover:shadow-[4px_4px_0px_#334155] hover:translate-x-1 hover:translate-y-1 group overflow-hidden">
+  <div className="bg-card rounded-2xl border-2 border-border shadow-[8px_8px_0px_#334155] flex flex-col h-full transition-all duration-300 hover:shadow-[4px_4px_0px_#334155] hover:-translate-y-2 group overflow-hidden">
     <div className="overflow-hidden">
       <img src={imageUrl} alt={title} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
     </div>

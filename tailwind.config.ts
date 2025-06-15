@@ -19,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			backgroundSize: {
+				'300%': '300%',
+			},
 			fontFamily: {
 				sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
 				display: ['Montserrat', 'Inter', 'sans-serif'],
