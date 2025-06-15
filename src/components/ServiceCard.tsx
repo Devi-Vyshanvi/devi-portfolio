@@ -9,7 +9,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ icon: Icon, title, description }: ServiceCardProps) => (
-  <div className="bg-card p-8 rounded-2xl border-2 border-border shadow-[8px_8px_0px_#334155] transition-all duration-300 hover:shadow-[4px_4px_0px_#334155] hover:-translate-y-2">
+  <div className="bg-card p-8 rounded-2xl border-2 border-border shadow-[8px_8px_0px_hsl(var(--border))] transition-shadow duration-300 hover:shadow-[4px_4px_0px_hsl(var(--border))]">
     <Icon className="w-12 h-12 mb-4 text-primary" strokeWidth={1.5} />
     <h3 className="text-2xl font-bold mb-2">{title}</h3>
     <p className="text-muted-foreground mb-6">{description}</p>

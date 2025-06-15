@@ -9,7 +9,7 @@ import ContactSection from "@/components/ContactSection";
 const Index = () => (
   <div className="bg-background min-h-screen">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="bg-card max-w-6xl mx-auto my-8 md:my-12 p-4 sm:p-6 md:p-8 rounded-3xl border-2 border-border shadow-[12px_12px_0px_#334155]">
+      <div className="bg-card max-w-6xl mx-auto my-8 md:my-12 p-4 sm:p-6 md:p-8 rounded-3xl border-4 border-border">
         <Header />
         <main>
           <HeroSection />
