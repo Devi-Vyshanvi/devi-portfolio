@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 const HeroSection = () => (
   <section id="about" className="flex flex-col items-center py-20 md:py-32">
     <div className="text-center">
-      <h1 className="animate-fade-in animate-gradient-pan bg-gradient-to-r from-primary to-celestial-blue bg-[200%_auto] bg-clip-text text-transparent text-4xl lg:text-6xl font-extrabold tracking-tighter mb-4 leading-tight">
+      <h1 className="animate-fade-in text-primary text-4xl lg:text-6xl font-extrabold tracking-tighter mb-4 leading-tight">
         Hola my self Ankana Devi Vyshnavy
       </h1>
       <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
