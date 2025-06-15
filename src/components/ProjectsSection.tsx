@@ -4,22 +4,22 @@ import ProjectCard from "./ProjectCard";
 
 const PROJECTS = [
   {
-    title: "Landing Page",
-    description: "A clean and modern landing page using HTML, CSS, and a bit of JavaScript. Great for learning layouts & responsiveness.",
-    url: "",
-    imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1170&auto=format&fit=crop",
+    title: "E-commerce UI/UX Design",
+    description: "A comprehensive UI/UX design case study for an e-commerce platform, created in Figma.",
+    url: "http://bit.ly/3QRWLKX",
+    imageUrl: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1332&auto=format&fit=crop",
   },
   {
-    title: "Simple Calculator",
-    description: "A beginner-friendly calculator app built with JavaScript and styled with Tailwind CSS.",
-    url: "",
-    imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1170&auto=format&fit=crop",
+    title: "Interactive Web Prototype",
+    description: "A fully interactive website prototype developed using Framer, showcasing modern animations and user flows.",
+    url: "https://possible-oval-692489.framer.app/",
+    imageUrl: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1170&auto=format&fit=crop",
   },
   {
-    title: "My Portfolio Website",
-    description: "You’re on it! A portfolio to showcase my learning journey, built with React and Tailwind CSS.",
-    url: "",
-    imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1170&auto=format&fit=crop",
+    title: "Mobile App Concept",
+    description: "A design concept for a new mobile application, detailing the user interface and experience in Figma.",
+    url: "https://www.figma.com/design/ieZALzKNZR7fgVAjN51Ecs/Untitled?node-id=0-1&p=f",
+    imageUrl: "https://images.unsplash.com/photo-1581287053822-fd7bf4f4bf3f?q=80&w=1332&auto=format&fit=crop",
   },
 ];
 
