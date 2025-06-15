@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,33 +6,33 @@
 @layer base {
   :root {
     font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
-    /* Light Theme variables inspired by the reference image */
-    --background: 30 100% 97%; /* Peachy White */
-    --foreground: 222 84% 4.9%; /* Dark Gray / Black */
+    /* Dark Theme variables */
+    --background: 222 84% 4.9%; /* Dark Gray / Black */
+    --foreground: 210 40% 98%; /* White */
 
-    --card: 0 0% 100%; /* White */
-    --card-foreground: 222 84% 4.9%;
+    --card: 222 47% 11.2%; /* Darker Gray */
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 84% 4.9%;
+    --popover: 222 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
 
     --primary: 260 85% 70%; /* Lilac */
     --primary-foreground: 222 84% 4.9%;
 
-    --secondary: 220 13% 91%;
-    --secondary-foreground: 222 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 220 13% 91%;
+    --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 220 13% 91%;
-    --accent-foreground: 222 84% 4.9%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 13% 85%;
-    --input: 220 13% 85%;
+    --border: 217.2 32.6% 25.5%;
+    --input: 217.2 32.6% 25.5%;
     --ring: 260 85% 70%;
 
     --radius: 1rem;

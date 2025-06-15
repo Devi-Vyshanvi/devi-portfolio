@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ServiceCard from './ServiceCard';
 import { Figma, Code, Database } from 'lucide-react';
@@ -24,7 +23,7 @@ const services = [
 const ServicesSection = () => (
   <section id="services" className="py-12 md:py-20">
     <div className="text-center mb-12">
-      <p className="text-lg font-medium text-gray-600">Passion led us here</p>
+      <p className="text-lg font-medium text-muted-foreground">Passion led us here</p>
       <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mt-2">What I do</h2>
     </div>
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">

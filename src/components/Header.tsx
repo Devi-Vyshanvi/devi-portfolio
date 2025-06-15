@@ -7,7 +7,7 @@ const Header = () => (
     <div className="text-xl font-bold font-display tracking-wider">
       YourName.digital
     </div>
-    <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+    <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
       <a href="#about" className="hover:text-primary transition-colors">About</a>
       <a href="#services" className="hover:text-primary transition-colors">What I do</a>
       <a href="#projects" className="hover:text-primary transition-colors">My Work</a>
