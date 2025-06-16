@@ -7,7 +7,7 @@ const HeroSection = () => (
   <section id="about" className="flex flex-col items-start py-20 md:py-32 text-left">
     <div className="max-w-3xl">
       <h1 className="text-4xl lg:text-6xl font-extrabold tracking-tighter mb-4 leading-tight bg-gradient-to-r from-yellow-600 via-orange-500 to-red-500 bg-clip-text text-transparent animate-gradient-x">
-        Ankana Devi Vyshnavy.
+        Hola am Ankana Devi Vyshnavy.
         <br />
         A Designer & Developer.
       </h1>
