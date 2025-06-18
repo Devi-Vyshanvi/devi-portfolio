@@ -1,3 +1,4 @@
+
 import React, { useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import useIntersectionObserver from '@/hooks/useIntersectionObserver';
@@ -5,10 +6,10 @@ import { cn } from '@/lib/utils';
 
 const PROJECTS = [
   {
-    title: "E-commerce UI/UX Design",
-    description: "A comprehensive UI/UX design case study for an e-commerce platform, created in Figma.",
+    title: "Cyber-Edu",
+    description: "A comprehensive cybersecurity education platform design, featuring interactive learning modules and security training courses.",
     url: "http://bit.ly/3QRWLKX",
-    imageUrl: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1332&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1332&auto=format&fit=crop",
   },
   {
     title: "Interactive Web Prototype",
