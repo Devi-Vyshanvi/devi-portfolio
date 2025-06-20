@@ -1,4 +1,3 @@
-
 import React, { useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import useIntersectionObserver from '@/hooks/useIntersectionObserver';
@@ -12,10 +11,10 @@ const PROJECTS = [
     imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1332&auto=format&fit=crop",
   },
   {
-    title: "Interactive Web Prototype",
-    description: "A fully interactive website prototype developed using Framer, showcasing modern animations and user flows.",
-    url: "https://possible-oval-692489.framer.app/",
-    imageUrl: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1170&auto=format&fit=crop",
+    title: "Web Page",
+    description: "A modern web page design prototype showcasing clean layouts and user-friendly interface elements.",
+    url: "https://www.figma.com/proto/iOJZntMVpesdyQC57b7xQM/MooVelicious?node-id=44-2&t=NtlEduE3NmHwhD7g-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=44%3A2",
+    imageUrl: "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
   },
   {
     title: "Mobile App Concept",
