@@ -16,12 +16,6 @@ const PROJECTS = [
     url: "https://www.figma.com/proto/iOJZntMVpesdyQC57b7xQM/MooVelicious?node-id=44-2&t=NtlEduE3NmHwhD7g-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=44%3A2",
     imageUrl: "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
   },
-  {
-    title: "Mobile App Concept",
-    description: "A design concept for a new mobile application, detailing the user interface and experience in Figma.",
-    url: "https://www.figma.com/design/ieZALzKNZR7fgVAjN51Ecs/Untitled?node-id=0-1&p=f",
-    imageUrl: "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1374&auto=format&fit=crop",
-  },
 ];
 
 const ProjectsSection = () => {
