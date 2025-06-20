@@ -1,3 +1,4 @@
+
 import React, { useRef } from 'react';
 import ServiceCard from './ServiceCard';
 import { Figma, Code, Database } from 'lucide-react';
@@ -11,14 +12,14 @@ const services = [
     description: 'Crafting intuitive and beautiful user interfaces. From wireframes to final mockups and prototypes using Figma.'
   },
   {
-    icon: Code,
-    title: 'Web Development',
-    description: 'Building responsive and performant websites with HTML, CSS, JavaScript (Essentials), and Tailwind CSS.'
-  },
-  {
     icon: Database,
     title: 'Backend & Data',
     description: 'Handling data with SQL/SQLite and building application logic with Python. Grounded in DSA basics.'
+  },
+  {
+    icon: Code,
+    title: 'Web Development',
+    description: 'Building responsive and performant websites with HTML, CSS, JavaScript (Essentials), and Tailwind CSS.'
   }
 ];
 
